@@ -1,0 +1,95 @@
+<div class="w-full d-flex align-items-center justify-content-center   mt-3 ">
+    <form class="form w-50 border border-1 shadow-lg p-3 mb-5 bg-white rounded" [formGroup]="registerForm"
+        (ngSubmit)="register()">
+        <div class="form-group">
+            <label for="name">name</label>
+            <input type="text" class="form-control" id="name" formControlName="name" placeholder="Enter Name">
+            <div *ngIf="registerForm.controls['name'].invalid
+                && registerForm.controls['name'].touched">
+
+                <div class="text-danger" *ngIf="registerForm.controls['name'].hasError('required')">
+                    Name is mandatory.
+                </div>
+                <div class="text-danger"
+                    *ngIf="registerForm.controls['name'].dirty && registerForm.controls['name'].invalid">
+                    Each word must start with capital letter.
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" formControlName="email" placeholder="Enter email">
+            <div *ngIf="registerForm.controls['email'].invalid
+                && registerForm.controls['email'].touched">
+
+                <div class="text-danger" *ngIf="registerForm.controls['email'].hasError('required')">
+                    Email is mandatory.
+                </div>
+                <div class="text-danger"
+                    *ngIf="registerForm.controls['email'].dirty && registerForm.controls['email'].invalid">
+                    Email pattern is invalid.
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" formControlName="username"
+                placeholder="Enter Username">
+            <div *ngIf="registerForm.controls['username'].invalid
+                && registerForm.controls['username'].touched">
+
+                <div class="text-danger" *ngIf="registerForm.controls['username'].hasError('required')">
+                    Username is mandatory.
+                </div>
+                <div class="text-danger"
+                    *ngIf="registerForm.controls['username'].dirty && registerForm.controls['username'].invalid">
+                    Username can contain only small alphabets, digits or @#$&_
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="form-group">
+            <fieldset formGroupName="password">
+                <label for="currentPassword">Password</label>
+                <input type="password" class="form-control" id="currentPassword" placeholder="Enter Password"
+                    formControlName="currentPassword">
+                <div *ngIf="registerForm.get('password.currentPassword')?.touched
+                              && registerForm.get('password.currentPassword')?.invalid">
+
+                    <div class="text-danger" *ngIf="registerForm.get('password.currentPassword')?.hasError('required')">
+                        Password is mandatory.
+                    </div>
+                    <div class="text-danger"
+                        *ngIf="registerForm.get('password.currentPassword')?.dirty && registerForm.get('password.currentPassword')?.hasError('passwordPatternError')">
+                        Password must contain a capital, small, special character and digit & can have 8-16 char.
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <br>
+        <div class="form-group">
+
+            <label for="confirmpassword">Confirm Password</label>
+            <input #cpassword type="password" class="form-control" id="confirmpassword"
+                placeholder="Enter Password again">
+            <div class="text-danger " *ngIf="cpassword.value!=registerForm.get('password.currentPassword')?.value">
+                Password did not match.
+            </div>
+
+        </div>
+        <br>
+        <div class="justify-content-end  d-flex  ">
+            <button type="submit" class="btn btn-primary "
+                [disabled]="registerForm.invalid || registerForm.pristine || cpassword.value!=registerForm.get('password.currentPassword')?.value">Register</button>
+        </div>
+
+        <br>
+        <div *ngIf="errorMessage!=null">
+            <span class="text-danger">{{errorMessage}}</span>
+        </div>
+        <div *ngIf="successMessage!=null">
+            <span class="text-success">{{successMessage}}</span>
+        </div>
+    </form>
+
+</div>

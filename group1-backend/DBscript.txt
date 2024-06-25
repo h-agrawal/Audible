@@ -1,0 +1,89 @@
+db.getCollection('audiobooks').insertMany([
+    {
+        "_id": 1,
+        "title": "Caffeine",
+        "audioUrl": "assets/AudibleProjects-Assets/audio/Caffeine.m4a",
+        "coverUrl": "assets/AudibleProjects-Assets/images/Caffeine.png",
+        "rating": [
+            4.5,
+            6
+        ],
+        "releaseDate":"2024-02-29" ,
+        "price": 1299.99,
+        "author": "Author 1",
+        "narrator": "Narrator 1",
+        "length": "3 H 39 MIN",
+        "description": "Certainly! Harry Potter is a captivating series of seven fantasy novels written by the brilliant British author J.K. Rowling. The enchanting saga chronicles the extraordinary lives of a young wizard named Harry Potter, along with his steadfast friends Hermione Granger and Ron Weasley. These remarkable characters are all students at the prestigious Hogwarts School of Witchcraft and Wizardry. The magical world they inhabit is filled with spells, mythical creatures, and thrilling adventures that have captured the hearts of readers worldwide. The journey begins with the first book, “Harry Potter and the Sorcerer’s Stone” (also known as “Harry Potter and the Philosopher’s Stone”), which introduces us to the boy who survived the dark wizard Voldemort and became famous as “The Boy Who Lived”. From there, the series unfolds into a spellbinding tapestry of magic, friendship, and courage, captivating readers of all ages.",
+        "sampleAudio": null
+    },
+    {
+        "_id": 2,
+        "title": "Get Happy",
+        "audioUrl": "assets/AudibleProjects-Assets/audio/Get Happy.m4a",
+        "coverUrl": "assets/AudibleProjects-Assets/images/Get Happy.png",
+        "rating": [
+            4.5,
+            6
+        ],
+        "releaseDate":"2024-02-29" ,
+        "price": 1299.99,
+        "author": "Author 2",
+        "narrator": "Narrator 2",
+        "length": "2 H 33 M",
+        "description": "Certainly! Harry Potter is a captivating series of seven fantasy novels written by the brilliant British author J.K. Rowling. The enchanting saga chronicles the extraordinary lives of a young wizard named Harry Potter, along with his steadfast friends Hermione Granger and Ron Weasley. These remarkable characters are all students at the prestigious Hogwarts School of Witchcraft and Wizardry. The magical world they inhabit is filled with spells, mythical creatures, and thrilling adventures that have captured the hearts of readers worldwide. The journey begins with the first book, “Harry Potter and the Sorcerer’s Stone” (also known as “Harry Potter and the Philosopher’s Stone”), which introduces us to the boy who survived the dark wizard Voldemort and became famous as “The Boy Who Lived”. From there, the series unfolds into a spellbinding tapestry of magic, friendship, and courage, captivating readers of all ages.",
+        "sampleAudio": "assets/AudibleProjects-Assets/sample_audio/Get Happy.m4a"
+    },
+    {
+        "_id": 3,
+        "title": "Habits for Happiness",
+        "audioUrl": "assets/AudibleProjects-Assets/audio/Habits for Happiness.m4a",
+        "coverUrl": "assets/AudibleProjects-Assets/images/Habits for Happiness.png",
+        "rating": [
+            4.5,
+            6
+        ],
+        "releaseDate":"2024-02-29" ,
+        "price": 1299.99,
+        "author": "Author 3",
+        "narrator": "Narrator 3",
+        "length": "4 H 04 M",
+        "description": "Certainly! Harry Potter is a captivating series of seven fantasy novels written by the brilliant British author J.K. Rowling. The enchanting saga chronicles the extraordinary lives of a young wizard named Harry Potter, along with his steadfast friends Hermione Granger and Ron Weasley. These remarkable characters are all students at the prestigious Hogwarts School of Witchcraft and Wizardry. The magical world they inhabit is filled with spells, mythical creatures, and thrilling adventures that have captured the hearts of readers worldwide. The journey begins with the first book, “Harry Potter and the Sorcerer’s Stone” (also known as “Harry Potter and the Philosopher’s Stone”), which introduces us to the boy who survived the dark wizard Voldemort and became famous as “The Boy Who Lived”. From there, the series unfolds into a spellbinding tapestry of magic, friendship, and courage, captivating readers of all ages.",
+        
+        "sampleAudio": "assets/AudibleProjects-Assets/sample_audio/Habits for Happiness.m4a"
+    },
+    {
+        "_id": 4,
+        "title": "Herry Potter",
+        "audioUrl": "assets/AudibleProjects-Assets/audio/Herry Potter.m4a",
+        "coverUrl": "assets/AudibleProjects-Assets/images/Herry Potter.png",
+        "rating": [
+            4.5,
+            6
+        ],
+        "releaseDate":"2024-02-29" ,
+        "price": 1299.99,
+        "author": "Author 4",
+        "narrator": "Narrator 4",
+        "length": "2 H 16 M",
+        "description": "Certainly! Harry Potter is a captivating series of seven fantasy novels written by the brilliant British author J.K. Rowling. The enchanting saga chronicles the extraordinary lives of a young wizard named Harry Potter, along with his steadfast friends Hermione Granger and Ron Weasley. These remarkable characters are all students at the prestigious Hogwarts School of Witchcraft and Wizardry. The magical world they inhabit is filled with spells, mythical creatures, and thrilling adventures that have captured the hearts of readers worldwide. The journey begins with the first book, “Harry Potter and the Sorcerer’s Stone” (also known as “Harry Potter and the Philosopher’s Stone”), which introduces us to the boy who survived the dark wizard Voldemort and became famous as “The Boy Who Lived”. From there, the series unfolds into a spellbinding tapestry of magic, friendship, and courage, captivating readers of all ages.",
+        
+        "sampleAudio": "assets/AudibleProjects-Assets/sample_audio/Herry Potter.m4a"
+    },
+    {
+        "_id": 5,
+        "title": "IKIGAI",
+        "audioUrl": "assets/AudibleProjects-Assets/audio/IKIGAI.m4a",
+        "coverUrl": "assets/AudibleProjects-Assets/images/IKIGAI.png",
+        "rating": [
+            4.5,
+            6
+        ],
+        "releaseDate":"2024-02-29" ,
+        "price": 1299.99,
+        "author": "Author 1",
+        "narrator": "Narrator 2",
+        "length": "3 H 39 MIN",
+        "description": "Certainly! Harry Potter is a captivating series of seven fantasy novels written by the brilliant British author J.K. Rowling. The enchanting saga chronicles the extraordinary lives of a young wizard named Harry Potter, along with his steadfast friends Hermione Granger and Ron Weasley. These remarkable characters are all students at the prestigious Hogwarts School of Witchcraft and Wizardry. The magical world they inhabit is filled with spells, mythical creatures, and thrilling adventures that have captured the hearts of readers worldwide. The journey begins with the first book, “Harry Potter and the Sorcerer’s Stone” (also known as “Harry Potter and the Philosopher’s Stone”), which introduces us to the boy who survived the dark wizard Voldemort and became famous as “The Boy Who Lived”. From there, the series unfolds into a spellbinding tapestry of magic, friendship, and courage, captivating readers of all ages.",
+        
+        "sampleAudio": null
+    }

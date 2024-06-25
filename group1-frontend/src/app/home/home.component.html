@@ -1,0 +1,21 @@
+<div *ngIf="emptyHome" class="text-center ">
+<p><b>{{emptyHome}}</b></p>
+</div>
+
+<div class="container d-flex flex-column  justify-content-center  align-content-center  gap-2 ">
+<div class="d-flex justify-content-evenly border border-1 shadow-lg p-3 mb-5 bg-white rounded" *ngFor="let item of audiobooks" >
+    <div class="d-flex justify-content-center  align-content-center">
+        <img [src]="'../../assets/AudibleProjects-Assets/images/'+item.thumnailURL+'.png'" alt="{{item.genre}}">
+        
+    </div>
+    <div class="caption p-2">
+    <h5 class="fw-bold">{{item.title}}</h5>
+    <p class="m-0 p-0 fs-6">Author :&nbsp; <span>{{item.author}}</span></p>
+    <p class="m-0 p-0">Narrator : {{item.narrator}}</p>
+    <p class="m-0 p-0" style="font-size:small">Publisher : {{item.publisher}}({{item.publishedDate}})</p>
+    <p class="m-0 p-0">{{item.genre}}</p>
+    <p class="m-0 p-0">{{item.briefDescription}}</p>
+    <div class="d-flex justify-content-center "> <audio [src]="'../../assets/AudibleProjects-Assets/audio/'+item.audioURL+'.m4a'" style="height: 20px; background-color: white;" class="w-100" controls></audio></div>
+    </div>
+  </div>
+</div>

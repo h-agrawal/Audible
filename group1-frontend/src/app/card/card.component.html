@@ -1,0 +1,15 @@
+
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" style="height: 200px;" [src]="'../../assets/AudibleProjects-Assets/images/'+audioBook.thumnailURL+'.png'" alt="The book is about {{audioBook.genre}}">
+    <div *ngIf="audioBook.sampleAudioURL" class="d-flex justify-content-center "> <audio [src]="'../../assets/AudibleProjects-Assets/sample_audio/'+audioBook.sampleAudioURL+'.m4a'" style="height: 20px; background-color: white;" class="w-100" controls></audio></div>
+    <div class="card-body">
+      <h5 class="fw-bold">{{audioBook.title}}</h5>
+      <p class="m-0 p-0 fs-6">Author :&nbsp; <span>{{audioBook.author}}</span></p>
+      <p class="m-0 p-0">Narrator : {{audioBook.narrator}}</p>
+      <p class="m-0 p-0" style="font-size:small">Publisher : {{audioBook.publisher}}({{audioBook.publishedDate}})</p>
+      <p class="m-0 p-0">{{audioBook.price|currency:'INR'}}</p>
+      <a class="btn btn-warning " (click)="addToCart(audioBook.id)">Add to Cart</a>
+      {{successMessage}}
+    </div>
+    
+  </div>

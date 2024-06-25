@@ -1,0 +1,20 @@
+server:
+  port: 9600
+  
+spring:
+  application:
+    name: cartMS
+  cloud:
+    consul:
+      host: localhost
+      discovery:
+        hostname: localhost
+      config:
+        fail-fast: false
+        enabled: true
+        prefix: config
+        defaultContext: application
+        data-key: data
+        profileSeparator: '::'
+        format: YAML 
+

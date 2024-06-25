@@ -1,0 +1,9 @@
+<app-sort (sortBy)="criteria=$event"></app-sort>
+<div class="container d-flex flex-wrap gap-3 align-items-center justify-content-center">
+    <div *ngFor="let a of audiobook|filteraudiobook:customer|sort:criteria" class="">
+        <app-card [audioBook]="a">{{a}}</app-card>
+    </div>
+    
+</div>
+
+ 

@@ -1,0 +1,11 @@
+<div class="d-flex justify-content-end m-3 ">
+    <div class="form-group">
+                <label for="sortBy">Sort By</label>&nbsp;
+                <select id="sortBy" [(ngModel)]="value" (change)="onChange()">
+                  <option value="title">Title</option>
+                  <option value="author">Author</option>
+                  <option value="pricehl">Price - High to Low</option>
+                  <option value="pricelh">Price - Low to High</option>
+                </select>
+              </div>     
+</div>
